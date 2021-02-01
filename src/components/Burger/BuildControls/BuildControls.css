@@ -1,14 +1,13 @@
 .BuildControls {
-  width: 100%;
-  background-color: #cf8f2e;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  box-shadow: 0 2px 1px #ccc;
-  margin: auto;
-  padding: 10px 0;
+    width: 100%;
+    background-color: #CF8F2E;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 0 2px 1px #ccc;
+    margin: auto;
+    padding: 10px 0;
 }
-
 
 .OrderButton {
     background-color: #DAD735;
@@ -35,6 +34,10 @@
     color: #888888;
 }
 
+.OrderButton:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
 @keyframes enable {
     0% {
         transform: scale(1);
@@ -45,9 +48,4 @@
     100% {
         transform: scale(1);
     }
-}
-@media (max-width:810px) {
-  .BuildControls {
-    display: block;
-  }
 }
