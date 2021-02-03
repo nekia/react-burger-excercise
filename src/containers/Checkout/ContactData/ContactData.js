@@ -18,7 +18,6 @@ class ContactData extends Component {
 
   orderHandler = (event) => {
     event.preventDefault();
-    alert("You continue!");
     this.setState({ loading: true });
     const order = {
       ingredients: this.props.ingredients,
